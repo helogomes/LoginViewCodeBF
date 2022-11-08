@@ -1,0 +1,6 @@
+framework module Pods_LoginViewCodeCurso {
+  umbrella header "Pods-LoginViewCodeCurso-umbrella.h"
+
+  export *
+  module * { export * }
+}
