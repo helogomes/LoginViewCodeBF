@@ -35,7 +35,7 @@ class HomeScreen: UIView {
     }
     
     func addSubView() {
-        self.addSubview(tableView)
+        addSubview(tableView)
     }
     
     required init?(coder: NSCoder) {
@@ -45,10 +45,10 @@ class HomeScreen: UIView {
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
             
-            tableView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
-            tableView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor),
-            tableView.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor),
-            tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
+            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            tableView.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor),
+            tableView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor),
+            tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
         
         
         ])

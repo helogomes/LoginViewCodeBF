@@ -109,12 +109,12 @@ class LoginScreen: UIView {
     }
     
     private func configSuperView() {
-        self.addSubview(loginLabel)
-        self.addSubview(logoAppImageView)
-        self.addSubview(emailTextField)
-        self.addSubview(passwordTextField)
-        self.addSubview(loginButton)
-        self.addSubview(registerButton)
+        addSubview(loginLabel)
+        addSubview(logoAppImageView)
+        addSubview(emailTextField)
+        addSubview(passwordTextField)
+        addSubview(loginButton)
+        addSubview(registerButton)
     }
     
     public func configTextFieldDelegate(delegate: UITextFieldDelegate) {
@@ -170,17 +170,17 @@ class LoginScreen: UIView {
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
             
-                        loginLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
-                        loginLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+                        loginLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
+                        loginLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
                         logoAppImageView.topAnchor.constraint(equalTo: loginLabel.bottomAnchor, constant: 20),
-                        logoAppImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 60),
-                        logoAppImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -60),
+                        logoAppImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 60),
+                        logoAppImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -60),
                         logoAppImageView.heightAnchor.constraint(equalToConstant: 200),
             
                         emailTextField.topAnchor.constraint(equalTo: logoAppImageView.bottomAnchor, constant: 20),
-                        emailTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-                        emailTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+                        emailTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+                        emailTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
                         emailTextField.heightAnchor.constraint(equalToConstant: 40),
             
                         passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 15),

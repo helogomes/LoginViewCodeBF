@@ -44,17 +44,17 @@ class SportTableViewCellScreen: UIView {
     }
     
     func addSubView() {
-        self.addSubview(collectionView)
+        addSubview(collectionView)
     }
     
     //MARK: - Constraints de forma nativa
     func configConstraints() {
         NSLayoutConstraint.activate([
             
-            collectionView.topAnchor.constraint(equalTo: self.topAnchor),
-            collectionView.leftAnchor.constraint(equalTo: self.leftAnchor),
-            collectionView.rightAnchor.constraint(equalTo: self.rightAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            collectionView.topAnchor.constraint(equalTo: topAnchor),
+            collectionView.leftAnchor.constraint(equalTo: leftAnchor),
+            collectionView.rightAnchor.constraint(equalTo: rightAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
 
         ])
     }

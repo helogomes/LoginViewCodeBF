@@ -35,21 +35,21 @@ class SportCollectionViewCellScreen: UIView {
     }
     
     func addSubView() {
-        self.addSubview(imageView)
-        self.addSubview(sportName)
+        addSubview(imageView)
+        addSubview(sportName)
     }
     
     func configConstraints() {
         NSLayoutConstraint.activate([
             
-            imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
-            imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            imageView.bottomAnchor.constraint(equalTo: self.sportName.topAnchor, constant: -10),
+            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            imageView.bottomAnchor.constraint(equalTo: sportName.topAnchor, constant: -10),
             
-            sportName.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            sportName.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            sportName.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
+            sportName.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            sportName.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            sportName.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
             sportName.heightAnchor.constraint(equalToConstant: 20)
 
         ])

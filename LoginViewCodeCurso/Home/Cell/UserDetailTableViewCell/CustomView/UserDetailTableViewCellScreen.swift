@@ -40,20 +40,20 @@ class UserDetailTableViewCellScreen: UIView {
     }
     
     func addSubView() {
-        self.addSubview(userImageView)
-        self.addSubview(nameLabel)
+        addSubview(userImageView)
+        addSubview(nameLabel)
     }
     
     //MARK: - Constraints de forma nativa
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
             
-            userImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            userImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            userImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            userImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             userImageView.heightAnchor.constraint(equalToConstant: 80),
             userImageView.widthAnchor.constraint(equalToConstant: 80),
 
-            nameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            nameLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
             nameLabel.leadingAnchor.constraint(equalTo: userImageView.trailingAnchor, constant: 20),
             
         ])
